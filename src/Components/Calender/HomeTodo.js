@@ -3,7 +3,7 @@ import Todo from './Todo';
 import { useQuery } from 'react-query';
 import Loading from '../Loading/Loading';
 const HomeTodo = () => {
-    const { data: items, isLoading, refetch } = useQuery('items', () => fetch('http://localhost:5000/items', {
+    const { data: items, isLoading, refetch } = useQuery('items', () => fetch('https://apologetic-crown-36911.herokuapp.com/items', {
         method: 'GET',
         headers: {
             'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -15,7 +15,7 @@ const HomeTodo = () => {
     }
 
     const handleDelete=id=>{
-        const url=`http://localhost:5000/items/${id}`;
+        const url=`https://apologetic-crown-36911.herokuapp.com/items/${id}`;
         fetch(url,{
             method:'DELETE'
         })

@@ -12,7 +12,7 @@ const Todo = ({ items,todo,handleDelete,refetch }) => {
         const completedTask = {
             todo: todo.todo,
         }
-        fetch('http://localhost:5000/completedTask', {
+        fetch('https://apologetic-crown-36911.herokuapp.com/completedTask', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

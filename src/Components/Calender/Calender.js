@@ -14,7 +14,7 @@ const Calender = () => {
     const onChange=date=>{
         setDate(date)
     }
-    const { data: items, isLoading, refetch } = useQuery('items', () => fetch('http://localhost:5000/items', {
+    const { data: items, isLoading, refetch } = useQuery('items', () => fetch('https://apologetic-crown-36911.herokuapp.com/items', {
         method: 'GET',
         headers: {
             'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -31,7 +31,7 @@ const Calender = () => {
             const todo = {
                 todo: event.target.todo.value,
             }
-            fetch('http://localhost:5000/items', {
+            fetch('https://apologetic-crown-36911.herokuapp.com/items', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
@@ -54,7 +54,7 @@ const Calender = () => {
 
     }
     const handleDelete=id=>{
-        const url=`http://localhost:5000/items/${id}`;
+        const url=`https://apologetic-crown-36911.herokuapp.com/items/${id}`;
         fetch(url,{
             method:'DELETE'
         })

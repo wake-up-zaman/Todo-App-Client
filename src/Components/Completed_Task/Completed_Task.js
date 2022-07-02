@@ -4,7 +4,7 @@ import { useQuery } from 'react-query';
 import Loading from '../Loading/Loading';
 
 const Completed_Task = () => {
-    const { data: completedTask, isLoading, refetch } = useQuery('completedTask', () => fetch('http://localhost:5000/completedTask', {
+    const { data: completedTask, isLoading, refetch } = useQuery('completedTask', () => fetch('https://apologetic-crown-36911.herokuapp.com/completedTask', {
         method: 'GET',
         headers: {
             'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -14,7 +14,7 @@ const Completed_Task = () => {
         return <Loading></Loading>
     }
     const handleDelete=id=>{
-            const url=`http://localhost:5000/completedTask/${id}`;
+            const url=`https://apologetic-crown-36911.herokuapp.com/completedTask/${id}`;
             fetch(url,{
                 method:'DELETE'
             })
