@@ -32,7 +32,7 @@ const Completed_Task = () => {
                     completedTask.map((todo) =>
                     <div className='todoContainer'>
                         <div className=''>{todo.todo}</div>
-                        <button onClick={()=>handleDelete(todo._id)} class=""><p className='icon'><RiDeleteBin6Fill /></p></button>
+                        <button onClick={()=>handleDelete(todo._id)} class=""><p className='iconDelete'><RiDeleteBin6Fill /></p></button>
                     </div>
 
                     )

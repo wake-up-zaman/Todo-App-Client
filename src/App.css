@@ -86,7 +86,26 @@ body {
   cursor: pointer;
   background-color: rgb(30, 219, 140);
 }
-
+.iconDelete{
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  margin-right: 10px;
+  color: black;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(171, 61, 81);  
+}
+.iconDelete:hover{
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  margin-right: 10px;
+  color: black;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(214, 13, 50);  
+}
 .completedHeading {
   text-align: center;
   margin-bottom: 20px;

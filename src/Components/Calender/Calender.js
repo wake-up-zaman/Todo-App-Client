@@ -82,7 +82,7 @@ const Calender = () => {
                         items.map((todo) =>
                             <div className='todoContainer'>
                             <p className='todoCalender'>{todo.todo}</p>
-                            <button onClick={()=>handleDelete(todo._id)} class=""><p className='icon'><RiDeleteBin6Fill /></p></button>
+                            <button onClick={()=>handleDelete(todo._id)} class=""><p className='iconDelete'><RiDeleteBin6Fill /></p></button>
                             </div>
                         )
                     }

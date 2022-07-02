@@ -38,7 +38,7 @@ const Todo = ({ items,todo,handleDelete,refetch }) => {
                 <div className='icons'>
                 <button onClick={handleComplete} class=""><p className='icon'><FaCheck /></p></button>
                     <p className='icon'><BsPencilFill /></p>
-                    <button onClick={()=>handleDelete(todo._id)}><p className='icon'><RiDeleteBin6Fill /></p></button>
+                    <button onClick={()=>handleDelete(todo._id)}><p className='iconDelete'><RiDeleteBin6Fill /></p></button>
                 </div>
             </div>
 
